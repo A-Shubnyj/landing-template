@@ -1,0 +1,14 @@
+
+mixin menu__buttons_button(name, href)
+    a.menu__buttons_button(href= "#"+href)= name
+
+block header
+
+    .menu 
+        .menu__buttons
+            +menu__buttons_button('Home', "home")
+            +menu__buttons_button('About me', "about")
+            +menu__buttons_button('Skills', "skills" )
+            +menu__buttons_button('Portfolio', "portfolio")
+            +menu__buttons_button('Contacts', "contacts")
+    hr
