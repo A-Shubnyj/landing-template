@@ -4,9 +4,10 @@ block main
     script var pageName = 'main';
     .container
         .__home(id="home")
-            h1 Denis Novik 
-            p UX | UI designer 24 years old, Minsk
-            img 
+            ._text
+                h1 Denis Novik 
+                p UX | UI designer 24 years old, Minsk
+            img(src='./images/main_image.png') 
         .__about(id="about")
             h1 About me 
             p Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. <br> I'm studying at courses "Web and mobile design interfaces" in IT-Academy. <br> Ready to implement excellent projects with wonderful people
@@ -14,15 +15,15 @@ block main
             h1 Skills 
             p I work in such programs as 
             ._programs
-                +addProgram("adobe.svg","adobe photoshop", "4")
-                +addProgram("adobe.svg","adobe illustrator", "3")
-                +addProgram("adobe.svg","adobe after effects", "4")
-                +addProgram("adobe.svg","figma", "4")
+                +addProgram("./images/svg/photoshop.svg","adobe photoshop", "4")
+                +addProgram("./images/svg/illustrator.svg","adobe illustrator", "3")
+                +addProgram("./images/svg/AE.svg","adobe after effects", "4")
+                +addProgram("./images/svg/Figma.svg","figma", "4")
         .__portfolio(id="portfolio")             
             h1 Portfolio 
-            +addProject("project.png", "Online fashion store - Homepage")
-            +addProject("project.png", "Reebok Store - Concept")
-            +addProject("project.png", "Braun Landing Page - Concept")
+            +addProject('./images/fashion.png', "Online fashion store - Homepage")
+            +addProject("./images/reebok_web.png", "Reebok Store - Concept")
+            +addProject("./images/braun.png", "Braun Landing Page - Concept")
         .__contacts(id="contacts")
             h1 Contacts 
             p Want to know more or just chat?<br>You are welcome! 
