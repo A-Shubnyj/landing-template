@@ -6,10 +6,43 @@
 ._text
     display: flex
     flex-direction: row
-    align-items: baseline    
+    align-items: flex-end
+    justify-content: space-around
+    
   
 .program_card_level polygon 
   fill: lightgray
 
 .program_card_level polygon.active
   fill: black
+
+.container
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.container:first-child 
+  margin-top: 20px
+  background-color: red
+
+._title.headtitle 
+  width: 10%
+  font-size: 47px
+  line-height:  58.61px
+
+.title.description
+  font-size: 18px
+  line-height: 21.83px
+ 
+ ._language.button 
+  margin-bottom: 2.2em
+  transform: rotate(-90deg)
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+
+
+

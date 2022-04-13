@@ -37,10 +37,10 @@ const
                 '!./app/cssjs/mixins.styl'
             ],
             js: './app/cssjs/**/**/*.js',
-            svg: './app/materials/svg/*.svg',
-            svg_files: './app/materials/svg-files/*.svg',
-            to_root: './app/materials/to-root/*',
-            img: './app/materials/images/**/*'
+            svg: './app/assets/svg/*.svg',
+            svg_files: './app/assets/svg-files/*.svg',
+            to_root: './app/assets/to-root/*',
+            img: './app/assets/images/**/*'
         },
         dist: {
             html: './' + cmsTpl,
@@ -59,18 +59,18 @@ const
                 ],
                 js: './app/cssjs/app.js',
                 css: [
-                    './app/materials/fonts/**/*.css'
+                    './app/assets/fonts/**/*.css'
                 ],
                 fonts: [
-                    './app/materials/fonts/**/*.{ttf,woff,woff2,svg,eot}'
+                    './app/assets/fonts/**/*.{ttf,woff,woff2,svg,eot}'
                 ],
                 img: [
-                    './app/materials/images/**/*.{jpg,jpeg,png}',
-                    './app/materials/images/*.{jpg,jpeg,png}'
+                    './app/assets/images/**/*.{jpg,jpeg,png}',
+                    './app/assets/images/*.{jpg,jpeg,png}'
                 ],
-                svg: './app/materials/svg/*.svg',
-                svg_files: './app/materials/svg-files/*.svg',
-                to_root: './app/materials/to-root/*.*'
+                svg: './app/assets/svg/*.svg',
+                svg_files: './app/assets/svg-files/*.svg',
+                to_root: './app/assets/to-root/*.*'
             },
             vendor: {
                 js: [
@@ -80,7 +80,7 @@ const
                     './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
                 ],
                 css: [
-                    './app/materials/fonts/**/*.css',
+                    './app/assets/fonts/**/*.css',
                     './node_modules/normalize.css/normalize.css',
                     './node_modules/bootstrap/dist/css/bootstrap.min.css',
                     './node_modules/swiper/swiper-bundle.min.css',
@@ -312,10 +312,6 @@ gulp.task('email', gulp.series(
     cssCommon,
     gulp.parallel(img, htmlEmail, serveMail)
 ));
-
-
-var gulp = require('gulp');
-var pug = require('gulp-pug');
 var pugbem = require('gulp-pugbem');
 
 gulp.task('pages', function() {
