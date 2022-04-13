@@ -4,39 +4,45 @@ block main
     script var pageName = 'main';
     .container
         .__home(id="home")
-            ._text
-                ._title.headtitle
-                    h1 Denis Novik 
-                ._title.description
-                    p UX | UI designer 24 years old, Minsk
-                ._language.button RU|ENG    
-            img(src='./images/main_image.png') 
+            .wrapper
+                ._text
+                    ._title.headtitle
+                        h1 Denis Novik 
+                    ._title.description
+                        p UX | UI designer 24 years old, Minsk
+                    ._language.button RU|ENG    
+                img(src='./images/main_image.png') 
         .__about(id="about")
-            h1 About me 
-            p Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. <br> I'm studying at courses "Web and mobile design interfaces" in IT-Academy. <br> Ready to implement excellent projects with wonderful people
-        .__skills(id="skills") 
-            h1 Skills 
-            p I work in such programs as 
-            ._programs
-                +addProgram("./images/svg/photoshop.svg","adobe photoshop", "4")
-                +addProgram("./images/svg/illustrator.svg","adobe illustrator", "3")
-                +addProgram("./images/svg/AE.svg","adobe after effects", "4")
-                +addProgram("./images/svg/Figma.svg","figma", "4")
-        .__portfolio(id="portfolio")             
-            h1 Portfolio 
-            +addProject('./images/fashion.png', "Online fashion store - Homepage")
-            +addProject("./images/reebok_web.png", "Reebok Store - Concept")
-            +addProject("./images/braun.png", "Braun Landing Page - Concept")
+            .wrapper
+                h1 About me 
+                p Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. <br> I'm studying at courses "Web and mobile design interfaces" in IT-Academy. <br> Ready to implement excellent projects with wonderful people
+        .__skills(id="skills")
+            .wrapper 
+                h1 Skills 
+                p I work in such programs as 
+                ._programs
+                    +addProgram("./images/svg/photoshop.svg","adobe photoshop", "4")
+                    +addProgram("./images/svg/illustrator.svg","adobe illustrator", "3")
+                    +addProgram("./images/svg/AE.svg","adobe after effects", "4")
+                    +addProgram("./images/svg/Figma.svg","figma", "4")
+        .__portfolio(id="portfolio")  
+            .wrapper           
+                h1 Portfolio
+                ._projects 
+                    +addProject('./images/fashion.png', "Online fashion store - Homepage")
+                    +addProject("./images/reebok_web.png", "Reebok Store - Concept")
+                    +addProject("./images/braun.png", "Braun Landing Page - Concept")
         .__contacts(id="contacts")
-            h1 Contacts 
-            p Want to know more or just chat?<br>You are welcome! 
-            button.messsage_button Send message 
-            ._links 
-                +addIcon("linkedIn.svg", "linkedIn.com")
-                +addIcon("linkedIn.svg", "Instagram.com")
-                +addIcon("linkedIn.svg", "Behance.com")
-                +addIcon("linkedIn.svg", "Dribble.com")
-            p Like me on<br>LinkedIn, Instagram, Behance, Dribble
+            .wrapper
+                h1 Contacts 
+                p Want to know more or just chat?<br>You are welcome! 
+                button.messsage_button Send message 
+                ._links 
+                    +addIcon("linkedIn.svg", "linkedIn.com")
+                    +addIcon("linkedIn.svg", "Instagram.com")
+                    +addIcon("linkedIn.svg", "Behance.com")
+                    +addIcon("linkedIn.svg", "Dribble.com")
+                p Like me on<br>LinkedIn, Instagram, Behance, Dribble
             
                  
                 

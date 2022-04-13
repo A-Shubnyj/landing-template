@@ -1,4 +1,4 @@
-# Сборка Gulp+webpack (pug, stylus)
+# Лэндинг на основе сборки Gulp+webpack (pug, stylus)
 
 ```
 В сборке по умолчанию: 

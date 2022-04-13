@@ -2,6 +2,15 @@
   display: flex
   flex-direction: row
   flex-wrap: wrap
+  align-content: baseline
+  align-items: flex-end
+  justify-content: space-evenly
+
+.program_image
+  height: 6em
+
+.project_image
+  width: 100%
 
 ._text
     display: flex
@@ -9,32 +18,26 @@
     align-items: flex-end
     justify-content: space-around
     
-  
+main
+  width:100%
+
 .program_card_level polygon 
   fill: lightgray
 
 .program_card_level polygon.active
   fill: black
 
-.container
-  width: 100%
-  display: flex
-  flex-direction: column
-
-.container:first-child 
-  margin-top: 20px
-  background-color: red
 
 ._title.headtitle 
   width: 10%
   font-size: 47px
   line-height:  58.61px
 
-.title.description
+._title.description
   font-size: 18px
   line-height: 21.83px
  
- ._language.button 
+._language.button 
   margin-bottom: 2.2em
   transform: rotate(-90deg)
   font-family: Gilroy-Bold;
@@ -42,7 +45,47 @@
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  
+
+.wrapper
+  width:60%
+  margin-top: 4em
+  margin-bottom: 4em
+
+.__home
+  max-width:100% 
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center  
+
+.__about
+  @extend .__home
+  background-color: #F6F6F6
+
+.__skills
+  @extend .__home  
+
+.__portfolio
+  @extend .__home
+  background-color: #F6F6F6     
+
+.__contacts
+  @extend .__home    
+
+.project
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 1em
+
+._projects 
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  align-content: center
+  align-items: flex-end
+  justify-content: space-evenly
+   
 
 
 

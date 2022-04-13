@@ -1,72 +1,72 @@
 {
-  "version": "1.0.0",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp default"
-  },
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.13.8",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.13.9",
-    "@babel/preset-env": "^7.13.9",
-    "autoprefixer": "^10.2.4",
-    "babel-loader": "^8.2.2",
-    "browser-sync": "*",
-    "browserslist": "^4.16.3",
-    "gulp": "*",
-    "gulp-cheerio": "*",
-    "gulp-concat": "*",
-    "gulp-cssnano": "*",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-inline-css": "^4.0.0",
-    "gulp-plumber": "*",
-    "gulp-postcss": "*",
-    "gulp-pug": "*",
-    "gulp-pugbem": "^2.2.4",
-    "gulp-rename": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-stylus": "*",
-    "gulp-svg-sprite": "*",
-    "gulp-uglify": "*",
-    "imagemin-pngquant": "^9.0.2",
-    "nib": "*",
-    "npm-check-updates": "^11.1.10",
-    "postcss": "^8.2.7",
-    "rupture": "*",
-    "webpack": "^5.24.3",
-    "webpack-stream": "^6.1.2"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.13.9",
-    "@fancyapps/fancybox": "^3.5.7",
-    "bootstrap": "^4.6.0",
-    "imagemin-mozjpeg": "^9.0.0",
-    "inputmask": "^5.0.5",
-    "jquery": "^3.6.0",
-    "normalize.css": "^8.0.1",
-    "swiper": "^6.4.15"
-  },
-  "description": "Уже должен быть установлен Node.js",
-  "name": "gulpproject",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/milkamil93/gulp-assembly.git"
-  },
-  "author": "milkamil93",
-  "bugs": {
-    "url": "https://github.com/milkamil93/gulp-assembly/issues"
-  },
-  "homepage": "https://github.com/milkamil93/gulp-assembly#readme",
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "version": "1.0.0",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "gulp": "gulp default"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.13.8",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.13.9",
+        "@babel/preset-env": "^7.13.9",
+        "autoprefixer": "^10.2.4",
+        "babel-loader": "^8.2.2",
+        "browser-sync": "*",
+        "browserslist": "^4.16.3",
+        "gulp": "*",
+        "gulp-cheerio": "*",
+        "gulp-concat": "*",
+        "gulp-cssnano": "*",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-inline-css": "^4.0.0",
+        "gulp-plumber": "*",
+        "gulp-postcss": "*",
+        "gulp-pug": "*",
+        "gulp-pugbem": "^2.2.4",
+        "gulp-rename": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-stylus": "*",
+        "gulp-svg-sprite": "*",
+        "gulp-uglify": "*",
+        "imagemin-pngquant": "^9.0.2",
+        "nib": "*",
+        "npm-check-updates": "^11.1.10",
+        "postcss": "^8.2.7",
+        "rupture": "*",
+        "webpack": "^5.24.3",
+        "webpack-stream": "^6.1.2"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.13.9",
+        "@fancyapps/fancybox": "^3.5.7",
+        "bootstrap": "^4.6.0",
+        "imagemin-mozjpeg": "^9.0.0",
+        "inputmask": "^5.0.5",
+        "jquery": "^3.6.0",
+        "normalize.css": "^8.0.1",
+        "swiper": "^6.4.15"
+    },
+    "description": "Уже должен быть установлен Node.js",
+    "name": "gulpproject",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/milkamil93/gulp-assembly.git"
+    },
+    "author": "milkamil93",
+    "bugs": {
+        "url": "https://github.com/milkamil93/gulp-assembly/issues"
+    },
+    "homepage": "https://github.com/milkamil93/gulp-assembly#readme",
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
 }
