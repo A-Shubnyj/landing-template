@@ -4,7 +4,7 @@
     font-family: 'Gilroy-Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Gilroy-Bold'), url('./fonts/Gilroy-Bold.woff') format('woff');
+    src: local('Gilroy-Bold'), url('./css/fonts/Gilroy-Bold.woff') format('woff');
 }
 
 @font-face {
