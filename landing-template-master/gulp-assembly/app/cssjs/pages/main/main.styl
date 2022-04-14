@@ -21,19 +21,28 @@
 main
   width:100%
 
+.main_image
+  object-fit: cover
+  object-position: 50% 8%
+  height:60vh
+
 .program_card_level polygon 
   fill: lightgray
 
 .program_card_level polygon.active
   fill: black
 
+._title
+  margin-bottom:2em
 
 ._title.headtitle 
+  margin-bottom:0em
   width: 10%
   font-size: 47px
   line-height:  58.61px
 
 ._title.description
+  margin-bottom:0em
   font-size: 18px
   line-height: 21.83px
  
@@ -55,8 +64,6 @@ main
 .ENG:hover
   color:grey  
   font-size: 18px;
-
-
 
 .wrapper
   width:60%
@@ -98,7 +105,28 @@ main
   align-content: center
   align-items: flex-end
   justify-content: space-evenly
-   
+
+._links
+  display: flex
+  flex-direction: row
+  align-content: center
+  align-items: flex-end
+  justify-content: center
+.icon
+  height: 3em
+  width: auto
+  margin:2vw
+
+@media (max-width: 768px)
+
+  .wrapper
+    width:90%
+
+  ._text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
 
 
 

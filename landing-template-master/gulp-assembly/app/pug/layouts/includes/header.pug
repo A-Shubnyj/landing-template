@@ -1,14 +1,21 @@
 
 mixin menu__buttons_button(name, href)
-    a.menu__buttons_button(href= "#"+href)= name
+    li
+        a.menu__buttons_button(href= "#"+href)= name
 
 block header
 
     .menu 
-        .menu__buttons
+        input(type="checkbox")
+        .hamburger-lines
+            span(class="line line1")
+            span(class="line line2")
+            span(class="line line3")
+        ul(class="menu__buttons")
             +menu__buttons_button('Home', "home")
             +menu__buttons_button('About me', "about")
             +menu__buttons_button('Skills', "skills" )
             +menu__buttons_button('Portfolio', "portfolio")
             +menu__buttons_button('Contacts', "contacts")
+
     hr
