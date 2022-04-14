@@ -9,16 +9,18 @@ mixin svg(id,cls)
 mixin addProgram(src, name, level)
     div.program_card
         img.program_image(src= src)
-        p.program_card_sign= name
-            div.program_card_level(data-value= level) 
+        div.program_card_textwrapper
+            p.sign= name
+        div.program_card_level(data-value= level) 
 
 mixin addProject(src, name, href)
     div.project
         img.project_image(src= src)
         a.project_link(href= href)= name
 
-mixin addIcon(src, name, href)
-    img.icon(src= src, href= href)
+mixin addIcon(src, href)
+    a( href= href)
+        img.icon(src= src)
     
 doctype html
 html(lang='ru')

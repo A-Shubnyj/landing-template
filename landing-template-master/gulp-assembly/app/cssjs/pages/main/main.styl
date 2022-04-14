@@ -13,10 +13,11 @@
   width: 100%
 
 ._text
-    display: flex
-    flex-direction: row
-    align-items: flex-end
-    justify-content: space-between
+  display: flex
+  flex-direction: row
+  align-items: flex-end
+  justify-content: space-between
+  margin-bottom:2em
     
 main
   width:100%
@@ -26,14 +27,31 @@ main
   object-position: 50% 8%
   height:60vh
 
+.program_card
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-bottom: 40px;  display: flex
+  flex-direction: column
+  align-items: center
+
+.program_card_textwrapper
+  width:80px
+  height:62px
+
 .program_card_level polygon 
   fill: lightgray
 
 .program_card_level polygon.active
   fill: black
 
-._title
+.sign
+  color:#828282
+  font-size: 14px
+  margin-top:10px 
+
+.title
   margin-bottom:2em
+  margin-top:2em
 
 ._title.headtitle 
   margin-bottom:0em
@@ -42,9 +60,12 @@ main
   line-height:  58.61px
 
 ._title.description
+  text-align: left
   margin-bottom:0em
   font-size: 18px
   line-height: 21.83px
+._title.description p
+    margin-bottom:14px
  
 ._language.button 
   margin-bottom: 2.2em
@@ -67,7 +88,7 @@ main
 
 .wrapper
   width:60%
-  margin-top: 4em
+  margin-top: 2em
   margin-bottom: 4em
 
 .__home
@@ -80,23 +101,43 @@ main
 .__about
   @extend .__home
   background-color: #F6F6F6
+.__about .wrapper
+    width:50%
+.__about .title
+  margin-bottom: 0.5em
+
 
 .__skills
   @extend .__home  
+
+.__skills p
+  margin-bottom:4em
 
 .__portfolio
   @extend .__home
   background-color: #F6F6F6     
 
 .__contacts
-  @extend .__home    
+  @extend .__home
 
+.__contacts .title
+  margin-bottom: 0.5em
+
+.__contacts p
+  margin-bottom: 2em
+   
 .project
   display: flex
   flex-direction: column
   align-items: center
-  margin-bottom: 1em
+  margin-bottom: 4em
   width:100% 
+
+.project_link
+  color:black
+  text-decoration: none
+  text-decoration: underline
+  margin-top:2em
 
 ._projects 
   display: flex
@@ -107,15 +148,34 @@ main
   justify-content: space-evenly
 
 ._links
+  margin-top:2em
   display: flex
   flex-direction: row
   align-content: center
   align-items: flex-end
   justify-content: center
-.icon
+
+.icon 
   height: 3em
-  width: auto
+  width: 3em
   margin:2vw
+  pointer-events:all
+
+.icon use:hover
+  fill: red
+
+.message_button
+  border: none
+  color: #fff
+  width: 180px
+  height: 42px
+  background: #070707
+  border-radius: 50px  
+  &:hover
+    background:#414141
+    transform: scale(110%)
+    transition: 0.3s ease-in-out
+
 
 @media (max-width: 768px)
 

@@ -2,14 +2,14 @@ extends ../layouts/default.pug
 
 block main
     script var pageName = 'main';
-    .contain
+    .container 
         .__home(id="home")
             .wrapper
                 ._text
                     ._title.headtitle
                         h1 Denis Novik 
                     ._title.description
-                        p UX | UI designer 24 years old, Minsk
+                        p UX | UI designer <br> 24 years old, Minsk
                     ._language.button
                         .RU RU
                         p | 
@@ -17,35 +17,46 @@ block main
                 img(class="main_image" src='./images/main_image.png') 
         .__about(id="about")
             .wrapper
-                h1(class="_title") About me 
-                p Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. <br> I'm studying at courses "Web and mobile design interfaces" in IT-Academy. <br> Ready to implement excellent projects with wonderful people
+                h1(class="title") About me 
+                p Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+                p I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+                p Ready to implement excellent projects with wonderful people
         .__skills(id="skills")
             .wrapper 
-                h1(class="_title") Skills 
+                h1(class="title") Skills 
                 p I work in such programs as 
                 ._programs
-                    +addProgram("./images/svg/photoshop.svg","adobe photoshop", "4")
-                    +addProgram("./images/svg/illustrator.svg","adobe illustrator", "3")
-                    +addProgram("./images/svg/AE.svg","adobe after effects", "4")
-                    +addProgram("./images/svg/Figma.svg","figma", "4")
+                    +addProgram("./images/svg/photoshop.svg","Adobe Photoshop", "4")
+                    +addProgram("./images/svg/illustrator.svg","Adobe Illustrator", "3")
+                    +addProgram("./images/svg/AE.svg","Adobe After Effects", "4")
+                    +addProgram("./images/svg/Figma.svg","Figma", "4")
         .__portfolio(id="portfolio")  
             .wrapper           
-                h1(class="_title") Portfolio
+                h1(class="title") Portfolio
                 ._projects 
-                    +addProject('./images/fashion.png', "Online fashion store - Homepage")
-                    +addProject("./images/reebok_web.png", "Reebok Store - Concept")
-                    +addProject("./images/braun.png", "Braun Landing Page - Concept")
+                    +addProject('./images/fashion.png', "Online fashion store - Homepage", "google.com")
+                    +addProject("./images/reebok_web.png", "Reebok Store - Concept", "google.com")
+                    +addProject("./images/braun.png", "Braun Landing Page - Concept", "google.com")
         .__contacts(id="contacts")
             .wrapper
-                h1(class="_title") Contacts 
+                h1(class="title") Contacts 
                 p Want to know more or just chat?<br>You are welcome! 
-                button.messsage_button Send message 
+                button.message_button Send message 
                 ._links 
-                    +addIcon("./images/svg/linkin.svg", "linkedIn.com")
-                    +addIcon("./images/svg/insta.svg", "Instagram.com")
-                    +addIcon("./images/svg/behance.svg", "Behance.com")
-                    +addIcon("./images/svg/drib.svg", "Dribble.com")
-                p Like me on<br>LinkedIn, Instagram, Behance, Dribble
+                    //- +addIcon("./images/svg/linkin.svg", "linkedIn.com")
+                    //- +addIcon("./images/svg/insta.svg", "Instagram.com")
+                    //- +addIcon("./images/svg/behance.svg", "Behance.com")
+                    //- +addIcon("./images/svg/drib.svg", "Dribble.com")
+                    //- a(href="behance.com")
+                    svg(class="icon")
+                        use(xlink:href="./images/svg/behance.svg#behance")
+                    
+
+
+
+                p.sign Like me on<br>LinkedIn, Instagram, Behance, Dribble
             
+
+                
                  
                 
