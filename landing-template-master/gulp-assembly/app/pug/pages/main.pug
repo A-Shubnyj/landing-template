@@ -11,9 +11,9 @@ block main
                     ._title.description
                         p UX | UI designer <br> 24 years old, Minsk
                     ._language.button(id="language")
-                        .RU RU
+                        .RU(role="button") RU
                         p | 
-                        .ENG ENG
+                        .ENG(role="button") ENG
                 img(class="main_image" src='./images/main_image.png') 
         .__about(id="about")
             .wrapper
@@ -43,13 +43,13 @@ block main
                 p Want to know more or just chat?<br>You are welcome! 
                 button.message_button Send message 
                 ._links 
-                    //- +addIcon("./images/svg/linkin.svg", "linkedIn.com")
-                    //- +addIcon("./images/svg/insta.svg", "Instagram.com")
-                    //- +addIcon("./images/svg/behance.svg", "Behance.com")
-                    //- +addIcon("./images/svg/drib.svg", "Dribble.com")
-                    //- a(href="behance.com")
-                    svg(class="icon")
-                        use(xlink:href="./images/svg/behance.svg#behance")
+                    +addIcon("./images/svg/linkin.svg", "linkedIn.com")
+                    +addIcon("./images/svg/insta.svg", "Instagram.com")
+                    +addIcon("./images/svg/behancee.svg", "Behance.com")
+                    +addIcon("./images/svg/drib.svg", "Dribble.com")
+                    //a(href="behance.com")
+                    //- svg(class="icon")
+                    //-     use(xlink:href="./images/svg/behance.svg#behance")
                     
 
 
