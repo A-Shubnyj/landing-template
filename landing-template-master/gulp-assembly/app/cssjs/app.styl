@@ -1,0 +1,202 @@
+html
+  font-size 16px
+
+body
+  font-family: 'Gilroy-Medium'
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-size: 18px
+
+p
+  margin-bottom:40px
+
+
+.container
+  margin-top:115px
+  max-width: 100%
+  display: flex
+  flex-direction: column
+  padding: 0
+
+h1 
+  font-family: 'Gilroy-Bold'
+
+header
+  width: 100%
+  padding-left:20%
+  padding-right:20%
+  padding-top: 1.5em
+  z-index: 12;
+  position: fixed
+  background: #fff
+
+hr 
+  background: #828282
+  height: 1px
+
+.menu 
+  font-family: 'Gilroy-Bold'
+  display:flex
+  align-items: center
+  text-align: center
+  margin-bottom: 1.5em
+
+.menu__buttons
+  display: flex
+  flex-direction: row
+  width: 100%
+  justify-content: space-between
+  list-style: none
+  padding: 0
+
+
+.menu__buttons_button
+  text-decoration: none
+  transition: color 0.3s ease-in-out
+  color: #828282
+  font-family: Gilroy-Bold
+  font-size: 18px
+  line-height: 22px
+  letter-spacing: 0em
+  &:hover
+    color: black
+    transition: color 0.3s ease-in-out
+
+img
+  width:100%
+
+.header input[type="checkbox"],
+.header .hamburger-lines 
+  display: none
+
+._header_language.button
+  display: none
+
+@media (max-width: 768px) 
+
+  .container
+    margin-top:0px
+
+  ._header_language.button 
+    margin-bottom: 2.2em
+    transform: rotate(90deg) scale(1.5)
+    font-family: Gilroy-Bold
+    font-size: 16px
+    display: flex
+    flex-direction: row
+    line-height: 20px
+    letter-spacing: 0em
+    text-align: left
+    width: 20px
+    color:grey
+    position: relative
+    top:5em
+    left: 80%
+
+  .RU:hover
+    color:black
+  .ENG:hover
+    color:black  
+
+
+  header
+    width:100%
+    padding-left:0%
+    padding-right:0%
+    padding-top: 0em
+    position:fixed
+    margin: 0em
+
+  .menu input[type="checkbox"],
+  .menu .hamburger-lines 
+    display: block
+  
+
+  .menu 
+    background: #fff
+    display: flex
+    position: relative
+    height: 0px
+    justify-content: flex-start
+    align-items: stretch
+    
+  hr 
+    display:none
+
+  .menu input[type="checkbox"] 
+    position: absolute
+    display: block
+    height: 32px
+    width: 30px
+    top: 3em
+    left: 85%
+    z-index: 5
+    opacity: 0
+  
+
+  .menu .hamburger-lines 
+    display: block
+    height: 23px
+    width: 35px
+    position: absolute
+    top: 3em
+    left: 85%
+    z-index: 2
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  
+
+  .menu .hamburger-lines .line 
+    display: block
+    height: 4px
+    width: 100%
+    background: #333
+    &.line1
+     transform-origin: 15% 0%
+     transition: transform 0.4s ease-in-out
+    &.line2
+     transition: transform 0.2s ease-in-out
+    &.line3
+     transform-origin: 3% 100%
+     transition: transform 0.4s ease-in-out      
+  
+  .header .menu__buttons 
+    height: 100vh
+    padding:4vw
+    padding-top:3em
+    max-width: 60%
+    background: #fff
+    transform: translate(200%)
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    transition: transform 0.5s ease-in-out
+
+  .menu__buttons li
+    margin-bottom: 20px
+
+  .menu__buttons_button
+    font-size: 30px
+    
+
+  .menu input[type="checkbox"]:checked ~ .menu__buttons 
+    transform: translateX(70%)
+  
+
+  .menu input[type="checkbox"]:checked ~ .hamburger-lines .line1 
+    transform: rotate(45deg)
+  
+
+  .menu input[type="checkbox"]:checked ~ .hamburger-lines .line2 
+    transform: scaleY(0)
+  
+
+  .menu input[type="checkbox"]:checked ~ .hamburger-lines .line3 
+    transform: rotate(-45deg)
+  
+
+

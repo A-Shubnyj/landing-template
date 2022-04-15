@@ -1,0 +1,56 @@
+-var cmsTpl = '/'
+
+mixin svg(id,cls)
+    -var cls = cls ? ' ' + cls : ''
+    svg(class='icon icon-' + id + cls width="100%" height="100%" xmlns="http://www.w3.org/2000/svg")
+        use(xlink:href=cmsTpl + 'images/svg/sprite.svg#' + id)
+
+
+mixin addProgram(src, name, level)
+    div.program_card
+        img.program_image(src= src)
+        div.program_card_textwrapper
+            p.sign= name
+        div.program_card_level(data-value= level) 
+
+mixin addProject(src, name, href)
+    div.project
+        img.project_image(src= src)
+        a.project_link(href= href)= name
+
+mixin addIcon(src, href)
+    a( href= href)
+        img.icon(src= src)
+    
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='author' content='Building a template of landing')
+        meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1,height=device-height,viewport-fit=cover')
+        title Landing-template
+        base(href='/')
+        meta(name='description', content="")
+        meta(name='keywords', content="")
+        meta(property='og:title', content="")
+        meta(property="og:description" content="")
+        meta(property='og:type', content='website')
+        meta(property='og:url', content="")
+        meta(property='og:image', content=cmsTpl + 'assets/images/logo.png')
+        meta(name='theme-color' content="#fff")
+        link(rel='stylesheet' href=cmsTpl + 'css/vendor.min.css')
+        link(rel='stylesheet' href=cmsTpl + 'css/common.min.css')
+    body
+       
+        header.header       
+            include includes/header
+
+        main
+            block main
+
+        footer.footer
+            include includes/footer
+
+        script(src=cmsTpl + 'js/vendor.min.js')
+        script(src=cmsTpl + 'js/common.min.js')
