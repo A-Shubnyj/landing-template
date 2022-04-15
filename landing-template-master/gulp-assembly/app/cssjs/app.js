@@ -50,3 +50,5 @@ class Level {
 }
 
 document.querySelectorAll('.program_card_level').forEach(dom => new Level(dom));
+
+//смена языка

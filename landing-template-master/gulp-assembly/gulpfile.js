@@ -312,6 +312,8 @@ gulp.task('email', gulp.series(
     cssCommon,
     gulp.parallel(img, htmlEmail, serveMail)
 ));
+
+//pug bem
 var pugbem = require('gulp-pugbem');
 
 gulp.task('pages', function() {

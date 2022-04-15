@@ -6,6 +6,7 @@
         "gulp": "gulp default"
     },
     "license": "ISC",
+
     "devDependencies": {
         "@babel/core": "^7.13.8",
         "@babel/plugin-syntax-dynamic-import": "^7.8.3",
