@@ -1,1 +1,0 @@
-alert('Component header loaded');
